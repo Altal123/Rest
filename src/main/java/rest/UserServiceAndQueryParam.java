@@ -34,5 +34,4 @@ public class UserServiceAndQueryParam {
                 orderBy.toString()).build();
     }
 
-
 }
