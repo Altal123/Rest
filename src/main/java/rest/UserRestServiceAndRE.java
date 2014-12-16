@@ -9,7 +9,7 @@ import javax.ws.rs.core.Response;
 public class UserRestServiceAndRE {
 
     @GET
-    @Path("{id : \\d+}") //support digit only - here regular expression!
+    @Path("{id : \\d+}") //support digit only! - here regular expression!
     public Response getUserById(@PathParam("id") String id){
 
         return Response.status(200).entity("getUserById is called. id:" + id).build();

@@ -24,7 +24,7 @@ public class UserRestServiceAndParameter {
 
         String date = year + "/" + month + "/" + day;
 
-        return Response.status(200).entity("getUserHistory is called, year.month, day: " + date).build();
+        return Response.status(200).entity("getUserHistory is called, year, month, day: " + date).build();
     }
 
 }

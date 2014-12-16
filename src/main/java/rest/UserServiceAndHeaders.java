@@ -19,11 +19,11 @@ public class UserServiceAndHeaders {
 
     @GET
     @Path("/get-headers")
-    public Response addUser (@Context HttpHeaders headers){   //видає всі н
+    public Response addUser (@Context HttpHeaders headers){   //видає всі хідери
 
         String userAgent = headers.getRequestHeader("user-agent").get(0);
 
         return Response.status(200).entity("addUser is called, user-agent : " + userAgent).build();
-    }
 
+    }
 }

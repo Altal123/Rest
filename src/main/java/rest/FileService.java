@@ -15,7 +15,7 @@ public class FileService {
 
     @GET
     @Path("/get-file") //rest/file/get-file
-    @Produces("text/plain")
+    @Produces("text/plain") //тип возвращаемого файла от веб-сервиса, в данном случае простой текст.
     public Response getFile(){
 
         File file = new File(classLoader.getResource("web.txt").getFile());

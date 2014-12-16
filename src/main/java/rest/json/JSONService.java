@@ -11,7 +11,7 @@ public class JSONService {
     @GET
     @Path("/get")
     @Produces(MediaType.APPLICATION_JSON)
-    public Track getTrackinJSON(){
+    public Track getTrackInJSON(){
 
         Track track = new Track();
         track.setTitle("Diesel power");
@@ -22,8 +22,8 @@ public class JSONService {
 
     @POST
     @Path("/post")
-    @Consumes(MediaType.APPLICATION_JSON)
-    @Produces(MediaType.APPLICATION_JSON)
+    @Consumes(MediaType.APPLICATION_JSON)  //На вход метода подается json-файл
+    @Produces(MediaType.APPLICATION_JSON)  //На выходе метода получаем json-файл
     public Response createTrackInJson(Track track){
 
         return Response.status(200).entity(track).build();
